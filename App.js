@@ -1,12 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import ImagePicker from './app/components/ImagePicker';
+import LocalNotification from './app/components/LocalNotification';
+import SecureStoreDemo from './app/components/SecureStoreDemo';
+import ShareImage from './app/components/ShareImage';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      {/* <SecureStoreDemo /> */}
+      <ImagePicker />
+      {/* <LocalNotification /> */}
+      {/* <ShareImage /> */}
+    </>
   );
 }
 
